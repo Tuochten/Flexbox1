@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.3em;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+.contenedor {
+    
+}
+.contenido-principal {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+article {
+    flex: 3 0 29%;
+    padding: 2rem;
+    margin: 1em;
+    background-color: #adadad;
+    border-radius: 3px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+article img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+    article {
+        flex: 1 0 100%;
+    }
+}
